@@ -51,9 +51,9 @@ if(isset($_POST['submit_new']))
             $query='INSERT INTO email_verify (`email`,`rand`) VALUES ("'.$email_new.'","'.$rand.'");';
             mysqli_query($dbc,$query);
 
-
-            require_once('test.php');
-
+            $url2 = 'http://traveller.takshak.in/abhinav/emsend.php?type=send&email='.$email_new.'&rand='.$rand;
+            $response = file_get_contents($url2);
+            var_dump($response);
         }
     }
 }
