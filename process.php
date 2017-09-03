@@ -54,7 +54,7 @@ if(isset($_POST['submit_new']))
             $url2 = 'http://traveller.takshak.in/abhinav/emsend.php?type=send&email='.$email_new.'&rand='.$rand;
             $response = file_get_contents($url2);
             if ($response){
-                email_success=3;
+                $email_success=3;
             }
             //var_dump($response);
         }
