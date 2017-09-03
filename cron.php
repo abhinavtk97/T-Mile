@@ -1,10 +1,10 @@
 <?php
 error_reporting(0);
-$dbc=mysqli_connect("localhost","themanpy_taskhak","#takshak#beginwithin","themanpy_takshak17") or die('could not connect to database....');
+$dbc=mysqli_connect("ipobfcpvprjpmdo9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com","hi623hpsz4cll2al","hcwd5drm3begpx91","kc3zumqqccjyjlq3") or die('could not connect to database....');
     //$dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database.');
 
     try{
-        $handler = new PDO("mysql:host=127.0.0.1;dbname=themanpy_takshak17;charset=utf8", "themanpy_taskhak", "#takshak#beginwithin");
+        $handler = new PDO("mysql:host=ipobfcpvprjpmdo9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=kc3zumqqccjyjlq3;charset=utf8", "hi623hpsz4cll2al", "hcwd5drm3begpx91");
         $handler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     catch(PDOException $e){
